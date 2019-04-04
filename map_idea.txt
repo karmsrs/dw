@@ -12,7 +12,7 @@ E                   R-M-M-R W W W W W D W W W W W
                     | | | |           |
 F                 R-M-M-R-M W W W W W D W W W W W
                   | | | | |           |
-G               S-M-R-M-R-M-R W W W W D W W W W W
+G               R-M-R-M-R-M-R W W W W D W W W W W
                   | | | | | |         |
 H                 R-M-M-M-R-M-R-M W W D W W W W W
                     | | | | | | |    /
