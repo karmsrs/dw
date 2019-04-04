@@ -1,3 +1,4 @@
+```
     1 2 3 4 5 6 7 8 9 1011121314151617181920212223
 	
 A   X-X-X-X-X-X-X W W W W W W W W W W W W W D-S W
@@ -39,3 +40,4 @@ G = New Room (Beach, Guard room)
 D = New Room (Dock)
 B = New Room (Dock, Boss)
 S = New Room (Dock, Ship, expansion idea)
+```
