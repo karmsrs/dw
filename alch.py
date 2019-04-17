@@ -1,33 +1,11 @@
-def parse_regs():
-    with open("regs.txt", "r") as rf:
-        text = rf.read()
-        
-    lines = text.split('\n')
-    
-    newline = "\n"
-    tab = "    "
-    
-    out = 'regs = {' + newline
-    out2 = ''
-    
-    for line in lines:
-        reg1 = line[:35].split(':')
-        reg2 = line[35:].split(':')
-        
-        out += tab + '"' + reg1[0].strip(' ') + '": ' + reg1[1].replace(' ', '') + ',' + newline
-        out2 += tab + '"' + reg2[0].strip(' ') + '": ' + reg2[1].replace(' ', '') + ',' + newline
-        
-    out += out2
-    out = out[:-2]
-    
-    out += newline + '}'
-    
-    exec(out)
-    
-    return regs
+import traceback
 
+# set min / max tier of potion, and specify any types of potions you want to ignore when checking ingredients
+# copy/paste 'reagents herb' into regs.txt, save file, run script
 
-regs = parse_regs()
+mintier = 3
+maxtier = 4
+ignore_types = []
 
 types = ['str', 'con', 'dex', 'int', 'wis', 'chr', 'digestion', 'detox', 'hpregen', 'spregen']
 
@@ -103,26 +81,77 @@ pots = {
     }
 }
 
-mintier = 1
-maxtier = 4
-ignore_types = []
+def parse_regs():
+    with open("regs.txt", "r") as rf:
+        text = rf.read()
+        
+    lines = text.split('\n')
+    
+    newline = "\n"
+    tab = "    "
+    
+    out = 'regs = {' + newline
+    out2 = ''
+    
+    for line in lines:
+        reg1 = line[:35].split(':')
+        reg2 = line[35:].split(':')
+        
+        out += tab + '"' + reg1[0].strip(' ') + '": ' + reg1[1].replace(' ', '') + ',' + newline
+        out2 += tab + '"' + reg2[0].strip(' ') + '": ' + reg2[1].replace(' ', '') + ',' + newline
+        
+    out += out2
+    out = out[:-2]
+    
+    out += newline + '}'
+    
+    exec(out)
+    
+    return regs
 
-for type in [type for type in types if type not in ignore_types]:
-    for tier in range(mintier, maxtier + 1):
-        make = True
-        firstreg = True
-        for reg in pots[type][tier].keys():
-            if regs[reg] < pots[type][tier][reg]:
-                make = False
-                break
-            else:   
-                if not firstreg:
-                    check = regs[reg] / pots[type][tier][reg]
-                    if check < makenum:
-                        makenum = check
-                else:
-                    makenum = regs[reg] / pots[type][tier][reg]
-                    firstreg = False
-        if make:
-            print(type + str(tier) + ': ' + str(makenum))
+try:
+    regs = parse_regs()
+    scripted = []
 
+    for type in [type for type in types if type not in ignore_types]:
+        for tier in range(mintier, maxtier + 1):
+            make = True
+            firstreg = True
+            for reg in pots[type][tier].keys():
+                if regs[reg] < pots[type][tier][reg]:
+                    make = False
+                    break
+                else:   
+                    if not firstreg:
+                        check = regs[reg] / pots[type][tier][reg]
+                        if check < makenum:
+                            makenum = check
+                    else:
+                        makenum = regs[reg] / pots[type][tier][reg]
+                        firstreg = False
+            if make:
+                scripted.append((type + str(tier), str(makenum)))
+                print(type + str(tier) + ': ' + str(makenum))
+
+    if len(scripted) > 1:
+        script = "script "
+        for item in scripted:
+            if int(item[1]) > 1:
+                    script += item[1] + ":quickcraft " + item[0] + ","
+            else:
+                    script += "quickcraft " + item[0] + ","
+        script = script.strip(",")
+    elif len(scripted) == 1:
+        if int(scripted[0][1]) > 1:
+            script = "script " + scripted[0][1] + ":quickcraft " + scripted[0][0]
+        else:
+            script = "quickcraft " + scripted[0][0]
+    else:
+        script = "No pots."
+
+
+    print('\n\n' + script)
+except:
+    traceback.print_exc()
+
+s = raw_input("Copy/paste script to craft all pots.  Press enter to close.")

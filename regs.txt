@@ -1,45 +1,45 @@
-Ash Root                   :    3  Lord Leaf                  :   90  
-Ballamault                 :   60  Mandrake                   :   81  
-Bamboo Leaf                :   30  Mint Leaf                  :   70  
-Bergamot                   :    0  Mint Root                  :   96  
-Black Mushroom             :    8  Mistletoe                  :    2  
-Bristlegrass               :   94  Netherroot                 :   42  
-Brown Mushroom             :   17  Novaroot                   :   63  
-Cactus Flower              :   94  Oak Leaf                   :    0  
-Cancansa                   :  239  Opium                      :  124  
-Cannabis                   :  259  Passion Flower             :    0  
-Catchfly                   :   95  Pixie Breath               :   51  
-Chamomile                  :  196  Pixie Root                 :   19  
-Compfrey                   :  298  Poison Thorns              :  138  
-Cow Leaf                   :  186  Pokadot Mushroom           :  141  
-Crown Root                 :    4  Pokeweed                   :   16  
-Cryoflora                  :  130  Pond Weed                  :   18  
-Dark Root                  :    0  Psilocyin Mushroom         :  173  
-Daturas                    :  100  Pure SilverLeaf            :   94  
-Death Mint                 :   60  Red Ivy                    :   14  
-Death Shoots               :  209  Rock Leaf                  :   15  
-Desert Lace                :   10  Rocky Thorns               :   10  
-Dinkweed                   :  196  Rose Hip                   :    0  
-Dragon Root                :   36  Rotten Root                :    6  
-Enchanted Sumac            :  272  Sanshi                     :  126  
-Exotic Bai                 :    6  SilverLeaf                 :  122  
-Feverfew                   :  249  Sledge Mushroom            :  157  
-Flaming Sari               :    8  Sleepwillow                :    8  
-Fly Agaric Mushroom        :  200  Slimy Mushroom             :  183  
-Frosty Mushroom            :   69  Snowweed                   :   24  
-Frozen Root                :   25  Sparkling Yopo             :    0  
-Frozen Rose                :   43  Spine Flower               :   92  
-Galingale                  :    4  Spiner Root                :    0  
-Garling                    :   36  Spurge Leaf                :    6  
-Glowing Lily               :   24  Star Flower                :   88  
-Glowing Mushroom           :  183  Sun Flower                 :    0  
-Hashish                    :    0  Thistle                    :   24  
-Helio                      :   77  Trillum                    :    0  
-Honey Mushroom             :  177  Tunnera                    :   20  
-Ice Bain                   :   17  Valerian                   :    6  
-Ice Leaf                   :   66  Vampire Root               :   48  
-Jungle Root                :    7  Velvet Larz                :  269  
-Knotweed                   :  125  White Mushroom             :    2  
-Konjac                     :   52  Whore's Rose               :    0  
-Lava Root                  :   10  Wild Kanna                 :    0  
-Living Rock                :  106  Wild Weed                  :   10  
+Ash Root                   :   45  Lord Leaf                  :  147  
+Ballamault                 :   21  Mandrake                   :  152  
+Bamboo Leaf                :  152  Mint Leaf                  :   61  
+Bergamot                   :    2  Mint Root                  :   10  
+Black Mushroom             :   26  Mistletoe                  :    2  
+Bristlegrass               :    4  Netherroot                 :   18  
+Brown Mushroom             :   53  Novaroot                   :   14  
+Cactus Flower              :    3  Oak Leaf                   :    4  
+Cancansa                   :  101  Opium                      :    4  
+Cannabis                   :  259  Passion Flower             :   31  
+Catchfly                   :  202  Pixie Breath               :   83  
+Chamomile                  :   16  Pixie Root                 :   12  
+Compfrey                   :  290  Poison Thorns              :  272  
+Cow Leaf                   :  280  Pokadot Mushroom           :  201  
+Crown Root                 :    4  Pokeweed                   :   14  
+Cryoflora                  :  149  Pond Weed                  :   76  
+Dark Root                  :  110  Psilocyin Mushroom         :   23  
+Daturas                    :   48  Pure SilverLeaf            :  178  
+Death Mint                 :    4  Red Ivy                    :   47  
+Death Shoots               :  179  Rock Leaf                  :   37  
+Desert Lace                :   22  Rocky Thorns               :    5  
+Dinkweed                   :  257  Rose Hip                   :    6  
+Dragon Root                :   76  Rotten Root                :    4  
+Enchanted Sumac            :  176  Sanshi                     :  176  
+Exotic Bai                 :   12  SilverLeaf                 :   47  
+Feverfew                   :  231  Sledge Mushroom            :  241  
+Flaming Sari               :    0  Sleepwillow                :    4  
+Fly Agaric Mushroom        :  320  Slimy Mushroom             :  165  
+Frosty Mushroom            :  102  Snowweed                   :    0  
+Frozen Root                :   41  Sparkling Yopo             :   10  
+Frozen Rose                :  112  Spine Flower               :  173  
+Galingale                  :   14  Spiner Root                :    4  
+Garling                    :  106  Spurge Leaf                :   72  
+Glowing Lily               :    0  Star Flower                :   14  
+Glowing Mushroom           :   15  Sun Flower                 :   25  
+Hashish                    :   34  Thistle                    :  114  
+Helio                      :   88  Trillum                    :   56  
+Honey Mushroom             :  237  Tunnera                    :   37  
+Ice Bain                   :   27  Valerian                   :   22  
+Ice Leaf                   :  128  Vampire Root               :   61  
+Jungle Root                :   21  Velvet Larz                :    5  
+Knotweed                   :   31  White Mushroom             :   20  
+Konjac                     :    4  Whore's Rose               :   56  
+Lava Root                  :   37  Wild Kanna                 :   78  
+Living Rock                :  214  Wild Weed                  :   10  
