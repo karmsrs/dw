@@ -3,7 +3,7 @@ import traceback
 # set min / max tier of potion, and specify any types of potions you want to ignore when checking ingredients
 # copy/paste 'reagents herb' into regs.txt, save file, run script
 
-mintier = 3
+mintier = 1
 maxtier = 4
 ignore_types = []
 
