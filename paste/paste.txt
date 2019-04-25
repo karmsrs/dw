@@ -1,0 +1,49 @@
+--SCRIPT:
+dfear_label = Geyser.Label:new({
+  name = "dfear_label",
+  x = 0, y = 0,
+  width = 60, height = 20,
+  fgColor = "white",
+  message = ""
+}, dbuffs_container)
+
+dfear = false
+
+function update_dfear()
+  if dfear then
+    dfear_label:echo("<center>DFEAR ON</center>")
+    dfear_label:setStyleSheet([[background-color: red;]])
+  else
+    dfear_label:echo("<center>DFEAR OFF</center>")
+    dfear_label:setStyleSheet([[background-color: black;]])
+  end
+end
+
+function toggle_dfear()
+  send("dfear")
+end
+
+dfear_label:setClickCallback("toggle_dfear")
+
+
+
+--TRIGGERS:
+--when dfear turns ON:
+
+dfear = true
+update_dfear()
+
+--when dfear turns OFF:
+
+dfear = false
+update_dfear()
+
+--when transforming INTO dragon
+
+dfear = true
+update_dfear()
+
+--when transform OUT of dragon
+
+dfear = false
+update_dfear()
